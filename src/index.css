@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #242424;
+  color: white;
+}
+.active {
+  color: rgb(72, 78, 236);
+  border-bottom: 3px solid rgb(72, 78, 236);
+}
+.cart-check ~ input:checked ~ .cart-dropdown {
+  height: 100%;
+  display: flex;
+}
+.cart-dropdown {
+  display: none;
+  background-color: #211616;
+  position: absolute;
+  right: 0px;
+  min-width: 20rem;
+  max-height: 54rem;
+  justify-content: top;
+  align-items: center;
+  flex-direction: column;
+}
